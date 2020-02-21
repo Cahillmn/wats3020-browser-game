@@ -15,8 +15,8 @@ class Player {
 class TicTacToe {
     constructor() {
 
-        this.player1 = new Player('heart');
-        this.player2 = new Player('star')
+        this.player1 = new Player('times');
+        this.player2 = new Player('circle')
 
         this.currentPlayer = null;
 
