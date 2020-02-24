@@ -148,6 +148,7 @@ class TicTacToe {
             this.gameState[tile_x][tile_y] = this.currentPlayer.token;
             event.target.setAttribute('class', `tile played fas fa-${this.currentPlayer.token}`);
             this.moveCount++;
+            this.checkForWinner()
             this.switchPlayer();
         } else {
             return false;
@@ -268,7 +269,7 @@ function handleMove(event) {
     game.recordMove(event);
 
     // Check to see if the last move was a winning move.
-    game.checkForWinner();
+    
 
     // Rotate players.
 
